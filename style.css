@@ -3,6 +3,10 @@
   --main-size: 16px;
   --main-font: "Roboto", sans-serif;
 }
+@font-face {
+  font-family: "Vetrino";
+  src: url("./fonts/vetrino.ttf");
+}
 
 * {
   margin: 0;
@@ -10,7 +14,7 @@
   box-sizing: border-box;
   color: var(--main-color);
   size: var(--main-size);
-  font-family: --main-font;
+  font-family: var(--main-font);
 }
 
 .navigation {
@@ -51,7 +55,6 @@ li {
 }
 a {
   text-decoration: none;
-  font-family: Roboto;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0em;
@@ -61,13 +64,8 @@ a {
   background-color: #d8d8d6;
   padding-bottom: 60px;
 }
-
-.our_info {
-  text-align: center;
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  margin-left: 30px;
+.main-info {
+  margin-right: 30px;
 }
 .paragraph {
   font-size: 18px;
@@ -129,7 +127,7 @@ img {
   align-items: center;
 }
 .working-info h4 {
-  font-family: Vetrino;
+  font-family: "Vetrino";
   font-size: 32px;
   font-weight: 400;
   margin-bottom: 60px;
@@ -188,9 +186,6 @@ footer {
 }
 .icons a {
   padding: 15px;
-}
-.icons img {
-  object-fit: contain;
 }
 span {
   display: block;
